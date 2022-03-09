@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "c0d2f176-ce0e-4ea1-983b-460f3defd802",
+		"name": "Rest API Card",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Feri Afrianto",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "feri@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "Feri Afrianto",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "feri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"87-045dGGMra9EwjryLNU3AQ1ZDlzM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 03:56:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nama\": \"Feri Afrianto\",\n    \"email\": \"feri@gmail.com\",\n    \"_id\": \"6226d3ff4b5e140879942f70\",\n    \"registered_date\": \"2022-03-08T03:56:48.005Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "feri@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/sign_in",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "feri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/auth/sign_in",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"sign_in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e1-qGq5ZTNsdU2enyIbc1+X+KvtPNs\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 03:57:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZlcmlAZ21haWwuY29tIiwibmFtYSI6IkZlcmkgQWZyaWFudG8iLCJfaWQiOiI2MjI2ZDNmZjRiNWUxNDA4Nzk5NDJmNzAiLCJpYXQiOjE2NDY3MTE4NDB9.hDEQ79pcG21QvUoqzEhfSwYghjfDbAbilzCgdppdDBI\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Profile With Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InphaWRAZ21haWwuY29tIiwibmFtYSI6IlphaWRhbiIsIl9pZCI6IjYyMjZjZDgyNzQzM2ZjNzVlMzMzYWFmMiIsImlhdCI6MTY0NjcxMDI3OH0.3R_cLkL0UPff-RXfeZca64wc6X4OrIRblT3xQ6afwD0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Profile Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZlcmlAZ21haWwuY29tIiwibmFtYSI6IkZlcmkgQWZyaWFudG8iLCJfaWQiOiI2MjI2ZDNmZjRiNWUxNDA4Nzk5NDJmNzAiLCJpYXQiOjE2NDY3MTE4NDB9.hDEQ79pcG21QvUoqzEhfSwYghjfDbAbilzCgdppdDBI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "99"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"63-0PxxtqlQiT9b/E3t2kzGZHTYhCM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 03:58:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"feri@gmail.com\",\n    \"nama\": \"Feri Afrianto\",\n    \"_id\": \"6226d3ff4b5e140879942f70\",\n    \"iat\": 1646711840\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "211"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d3-q3XyANYxJbA+ThM18EDtnJtGXyg\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 03:58:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6226d3ff4b5e140879942f70\",\n        \"nama\": \"Feri Afrianto\",\n        \"email\": \"feri@gmail.com\",\n        \"password\": \"$2b$10$t4qp2QoVCLinRyxCei5yw.UDeQ8SuHzXeRii5wTdkeXrh2MltF1cS\",\n        \"registered_date\": \"2022-03-08T03:56:48.005Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
