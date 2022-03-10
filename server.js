@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 3000,
@@ -8,7 +10,7 @@ var express = require('express'),
   jsonwebtoken = require("jsonwebtoken");
 
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://feriafrianto:GX6WpMBHoB22v6z8@cluster0.ovbhy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").then(function(){
+mongoose.connect(process.env.DB_URI).then(function(){
     console.log('Database Berhasil Tersambung')
 }, function(err) {
     console.log(err);
